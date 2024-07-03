@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impulsa tu negocio con IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Aletheai Solutions</a>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#solutions">Soluciones</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a id="cta-js" href="#contact" class="cta-button">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Chatbot Section -->
+        <section id="chatter">
+            <div class="container">
+                <div id="chat-container">
+                    <div id="chat-title">
+                        ALETHEAI
+                        <button id="close-chat" aria-label="Close chat">X</button>
+                    </div>
+                    <div id="chat-messages"></div>
+                    <div id="chat-input">
+                        <textarea id="user-input" placeholder="Escribir..." rows="1"></textarea>
+                        <button id="send-button">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+         <script src="canvas.js"></script>
+        <section id="hero">
+            <canvas id="waveCanvas"></canvas>
+            <div class="container">
+                <h1>IMPULSA TU EMPRESA CON IA</h1>
+                <a id="banner-button" href="">MUESTRAME</a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products">
+            <div class="container">
+                <h2 id="nhh2">NUESTRAS HERRAMIENTAS</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <h3>Market Master</h3>
+                        <p>Eleva la presencia digital de tu negocio con la creación de contenido y el compromiso del cliente impulsados por IA.</p>
+                        <ul>
+                            <li>Gestión automatizada de redes sociales</li>
+                            <li>Servicio al cliente potenciado por IA</li>
+                            <li>Procesamiento inteligente de facturas</li>
+                            <li>Estrategias de marketing basadas en datos</li>
+                        </ul>
+                        <div class="button-container">
+                            <a href="#" class="button">Más Información</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <h3>DuckAssistant</h3>
+                        <p>Revoluciona la comunicación en el sector salud con chatbots de IA.</p>
+                        <ul>
+                            <li>Programación de citas simplificada</li>
+                            <li>Tareas administrativas automatizadas</li>
+                            <li>Comunicación mejorada entre pacientes y doctores</li>
+                            <li>Análisis de datos en tiempo real para proveedores de salud</li>
+                        </ul>
+                        <div class="button-container">
+                            <a href="#" class="button">Más Información</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <h3>MAI Assistant</h3>
+                        <p>Simplifica la gestión de facturas con verificación impulsada por IA.</p>
+                        <ul>
+                            <li>Verificaciones instantáneas del estado de facturas a través de WhatsApp</li>
+                            <li>Información detallada de pagos al alcance de tu mano</li>
+                            <li>Integración perfecta con sistemas existentes</li>
+                            <li>Gestión mejorada de relaciones con proveedores</li>
+                        </ul>
+                        <div class="button-container">
+                            <a href="#" class="button">Más Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions">
+            <div class="container">
+                <h2>DESAFIOS QUE ABORDAMOS</h2>
+                <div class="problem-grid">
+                    <div class="problem-card" data-problem="social-media">
+                        <h3>Redes Sociales</h3>
+                        <p>Transforma publicaciones dispersas en una estrategia digital cohesiva.</p>
+                    </div>
+                    <div class="problem-card" data-problem="customer-service">
+                        <h3>Servicio al Cliente</h3>
+                        <p>Convierte consultas abrumadoras en interacciones fluidas.</p>
+                    </div>
+                    <div class="problem-card" data-problem="invoice-management">
+                        <h3>Facturación</h3>
+                        <p>Convierte los dolores de cabeza del procesamiento manual en verificaciones sin esfuerzo.</p>
+                    </div>
+                    <div class="problem-card" data-problem="marketing-strategy">
+                        <h3>Marketing</h3>
+                        <p>Reemplaza la incertidumbre con estrategias de campaña basadas en datos.</p>
+                    </div>
+                </div>
+                <div class="solution-display">
+                    <h3>¡Selecciona un desafío para ver cómo lo resolvemos!</h3>
+                    <p class="solution-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process">
+            <div class="container">
+                <h2 id="nph2">NUESTRO PROCESO</h2>
+                <div class="journey-steps">
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-handshake"></i></div>
+                        <h3>Conectar</h3>
+                        <p>Interactúa con nuestro equipo para discutir tus desafíos y objetivos únicos.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3>Personalizar</h3>
+                        <p>Adaptamos nuestras soluciones de IA para integrarse perfectamente en tus operaciones.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Lanzar</h3>
+                        <p>Experimenta una integración fluida con nuestras interfaces de usuario intuitivas.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Prosperar</h3>
+                        <p>Observa cómo tu eficiencia se dispara y tu negocio se transforma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted By Section -->
+        <section id="trusted-by">
+            <div class="container">
+                <h2>Compañías que confían en nosotros</h2>
+                <div class="companies-grid">
+                    <div class="company-card">
+                        <img src="Resources/cerveceria-01.png" alt="Company 1 Logo">
+                        <h3>La Cerveceria de Barrio</h3>
+                        <p>"Implementamos un sistema para agilizar su proceso
+                            de facturación con proveedores"</p>
+                    </div>
+                    <div class="company-card">
+                        <img src="Resources/colegio.png" alt="Company 2 Logo">
+                        <h3>Colegio Humboldt</h3>
+                        <p>"Generamos contenido didáctico para guiar a sus compradores en el uso de su plataforma
+                            en línea"</p>
+                    </div>
+                    <div class="company-card">
+                        <img src="Resources/toscana.png" alt="Company 3 Logo">
+                        <h3>Café Toscano</h3>
+                        <p>"Implementamos un sistema para agilizar su proceso de facturación con proveedoress"</p>
+                    </div>
+                    <div class="company-card">
+                        <img src="Resources/zonacero.png" alt="Company 4 Logo">
+                        <h3>Zona Cero</h3>
+                        <p>"Creamos un chatbot para apoyar al artista a comunicarse con los interesados
+                            en sus cursos"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Acerca de nosotros</h4>
+                    <p>Ofrecemos soluciones inteligentes para PYMES.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Email: aletheaisolutions@gmail.com</p>
+                    <p>Teléfono: +52 1 22 12 82 00 55</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AletheAI Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="indexscripts.js"></script>
+</body>
+</html>
